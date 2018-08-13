@@ -1,0 +1,40 @@
+
+/*안보이는 태그*/
+ .out {display: none}
+
+.slide_text {color: #fff; font-size: 100px; position: absolute; top:40%; z-index: 99999;left:40%;}
+/*content*/
+.slide_box  { overflow:hidden; width: 100%; height: 100vh; }
+        .slide_box ul {width: 600%;  overflow: hidden; height: 100vh; }
+        	.slide_box ul li {float:left; width: 17%; height: 100vh;	background-size: cover; background-repeat: no-repeat; background-position: center; }
+.bx-wrapper {
+	margin-bottom: 0 !important; 
+}
+/*slide background-image*/
+	#slide1 {background-image: url("../img/slide_img1.jpg")}
+	#slide2 {background-image: url("../img/slide_img2.jpg")}
+	#slide3 {background-image: url("../img/slide_img3.jpg") }
+	#slide4 {background-image: url("../img/slide_img4.jpg")}
+	#slide5 {background-image: url("../img/slide_img5.jpg")}
+	#slide6 {background-image: url("../img/slide_img6.jpg") }
+	#slide7 {background: url("../img/slide_img7.jpg")no-repeat; -webkit-background-size: 1903px; background-size: 1903px;}
+	#slide8 {background: url("../img/slide_img8.jpg")no-repeat; -webkit-background-size: cover; background-position: center ;background-size: cover; background-position: center ; }
+	#slide9 {background: url("../img/slide_img9.jpg")no-repeat; -webkit-background-size: cover; background-position: center ;
+	background-size: cover; background-position: center ; }
+
+/*//slide */
+
+/*아래쪽 3개의 박스*/
+/*.content {max-width: 1903px; min-width:100%; height: 45vh; }
+	.content ul {width: 100%; height: 100%; display: -webkit-flex; display: flexbox; display: flex; }
+		.content ul li {height: 100%; float:left; list-style: none; flex:1;}
+		/*.a {-webkit-flex:1; flex:1;}*/
+			.content ul li:first-child { display: flex; align-items: center; justify-content: center;}
+				.illust {background: url(../img/symbolImg.png) no-repeat; z-index: 1px; background-position: center ; background-size: 300px;  background-color:pink;}
+				.illust span {width: 100%; display: block; margin-top: -390px; padding: 20px; font-weight: bold;}
+			.year {background: white;}
+				.callName {width: 100%; text-align: center; font-size: 8em; padding-top:5%;   }
+				.year span  {width: 100%; display: block; padding: 20px; font-weight: bold;}
+			.content ul li:last-child {background:#fffc8f;}
+				.content ul  .vision span {width: 100%; display: block;  padding: 20px; font-weight: bold;}
+				.vision>div {width: 100%; text-align: center; font-size: 5em; padding-top: 8%;}*/

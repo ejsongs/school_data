@@ -1,0 +1,17 @@
+.stay {padding-top: 50px; background: #f8f8f8; min-height: 100vh;}
+.content:after {display: block; content: ""; clear: both}
+	.main_title h3 {font-size: 35px; padding: 100px 0 70px; font-weight: normal; color:#1d1d1d;}
+	/*향교스테이의 설명*/
+   	.explain {width: 48%; float:left; line-height:25px}
+   		.explain p {width: 100%;  margin-bottom: 50px; color: #191919}
+   		.scd {}
+   			.scd h4 {font-size: 22px; font-weight: normal; padding-bottom: 15px; }
+   		.trd {width: 100%;margin-bottom: 40px;}
+   			.trd h4 {font-size: 15px; font-weight: normal; padding-bottom: 15px;}
+   			.trd ul {width: 100%; color: #191919}
+   				.trd ul li {padding: 5px 0;}
+   			.trd span {font-size: 18px;}
+	/*향교스테이 사진*/
+	.image {float:right; width: 47%;}
+		.image li {width: 100%; margin-bottom: 20px; }
+			.image li img {width: 100%;}

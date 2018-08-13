@@ -1,0 +1,97 @@
+.container {width:950px; position: relative;}
+/*content*/
+h2 { }
+
+.content {width: 100%; }
+/*메인사진*/
+	.banner { background: url("../img/banner.jpg") no-repeat; background-size: cover; background-position: 15% 50%;}
+/*축제정보*/
+	.festival {width: 100%; min-height: 90vh; background: #f5f5f5; clear:both;}
+		.festival #contain_color { height: 100%; margin:0 auto; }
+		.festivalList {width: 100%;}
+			.festivalList li {float:left; width: calc(100% / 4 - 30px); padding-right: 15px; height: 230px; list-style: none; margin-right: 40px ; }
+				.festivalList li:nth-child(4n) {margin-right: 0;}
+			.festivalList span {color:#ccc; font-size: 35px; height: 50px; display:block ; border-bottom: 1px solid #e8e8e8}
+			.festivalList p {color:#555; padding-top: 15px; font-size: 25px; letter-spacing: 1px;}
+	/*popup창*/
+		.popup {width: 100%; height: 100%; position: fixed; z-index: 9999999999; left:0; top:0;background: rgba(0,0,0,0.6);display: none}
+			.infor {background: white; height:430px; width: 1100px; transform: translate(-50% , -50%); position: absolute; top:50%; left:50%;}
+				.infor  h3 {float:left; height: 100%;  border-right:1px solid #000 ; padding: 50px 55px; font-size: 35px; line-height: 60px; letter-            spacing: 2px ; width: 274px; }}
+				.infor  .text {float:left; width: 824px; height: 100%;padding: 20px ; }
+				.popup button {position: absolute; right:2%; top:2%; width: 39px; height: 39px;}
+					.popup button {background: url(../img/close.png);}
+				.popup .infor .text {padding: 50px;}
+	/*축제소개하기*/
+	.culture {width: 100%;}
+		.culture .container {}
+				.culture ul {width:100%; }
+					.culture ul li {height: 250px; margin: 30px 0; border-bottom:1px solid #e0dede; padding-bottom: 20px;}
+						.culture ul li:first-child {margin-top: 0}
+						.culture ul li:last-child {border:none;}
+					  .culture ul li:after {content : "";display: block; clear: both}
+						.culture .smallImg , .text  {float:left;}
+						.culture h4 {padding-bottom: 20px; font-size: 25px;}
+						/*이미지*/
+						.smallImg {width: 25%; height: 100%;  }
+
+							#culture1 {background: url("../img/chumsungdae.jpg"); background-position: center ; -webkit-background-size: 240px;
+							background-size: 240px;}
+							#culture2 {background: url("../img/culture2.jpg")no-repeat; background-position:center; background-size:250px;}
+							#culture3 {background: url("../img/culture3.jpg")no-repeat; background-position: center; background-size:240px;}
+							#culture4 {background: url("../img/culture4.jpg")no-repeat; background-position: center; -webkit-background-size: 250px;}
+							#culture5 {background: url("../img/culture5.jpg")no-repeat; background-position: 80% 45%; }
+						.culture  .text {padding:0px 0px 0px 20px; }
+	/*문화재소개*/
+	.heritage {min-height: 100vh; color:#1e1e1e; margin-bottom: 20px;}
+	  .container:after {clear: both; display: block; content: ""}
+	  	.hertitageList {width: 100%;}
+	  		.hertiageList .item {border-top: 1px solid #ece6e6; min-height: 535px;padding-top: 60px;}
+	  		  .hertiageList .item:first-child {border:none; padding-top: 0;}
+	  			.leftBox {width: 30%;}
+	  				.leftBox img {width: 70%; height: 250px;}
+	  			.rightBox {width: 70%;}
+		.leftBox,.rightBox {float:left;}
+
+					/*dlZone*/
+						dl {width: 100%; background: white; }
+							dt {font-size: 18px; font-weight: bold; padding:20px 10px;}
+							dt:first-child {padding-top: 0;}
+							dd {min-height: 50px; margin-bottom: 20px; font-size: 15px; padding: 0 10px;}
+
+
+
+	/*경주 사진 3개*/
+	.imgBox {width: 100%; height: 70vh;  }
+		
+			.box {background:#9f9f9f; height: 100%;float:left;}
+			#left {width: 60%; background:url("../img/bottom1.jpg"); -webkit-background-size: cover;
+			background-size: cover;}
+            #right {width: 40%;}
+				#right li:first-child {background: url("../img/bottom2.jpg"); -webkit-background-size: cover; background-size: cover; background-position: 00% 30% }
+				#right li:last-child {background: url("../img/bottom3.jpg"); -webkit-background-size: cover; background-size: cover; background-position: 0% 85%;} 
+			.box:last-child {background: #fff;}
+				.box ul {width: 100%; height: 100%;}
+					.box ul li {width: 100%; height: 50%;}
+
+	/*경주에 오는길 / 지도 */
+	.gps {width: 100%; height: 70vh;}
+		#map { height: 40vh; width: 100%;}
+		.gps p {width: 100%; padding: 20px 0;}
+
+@media screen and (max-width: 639px){
+	.container {width: 100%; }
+	.festival {padding-left: 10px}
+	.top h2 {padding: 15px 0; font-size: 2.2em}
+		.festvialList {width:100%;height: 100%; }
+			/*.festivalList > .container {padding-left: 10px}*/
+				.festivalList li {height: 150px;width:44%;  margin-right: 20px}
+					.festivalList span {font-size: 2em}
+					.festivalList p {font-size: 1.5em}
+		.heritage {padding-left: 10px}
+			.leftBox {width: 22%;}
+				.leftBox h2 {font-size: 1.2em}
+	#map {width:100%; }
+	.gps {height: 50vh}
+	.gps .top h2{padding-left: 5px}
+	footer {width:100%;text-align: center; display: }
+}

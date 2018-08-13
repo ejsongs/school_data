@@ -1,0 +1,36 @@
+.banner {background: url("../img/moon1.jpg"); background-size: cover; background-position:center ;}
+/*달동네 이미지 */
+.list { padding-bottom: 20px; }
+	.infor {width: 100%; padding: 50px 0;}
+		.infor h3 {font-size: 30px; margin-bottom: 20px;}
+.list ul {width: 100%; }
+.list ul:after {clear:both; content:""; display: block}
+	.list ul li {width:calc(100% / 3 - 40px); background: #9d9d9d;  height: 400px; border-radius: 5%; float:left;  margin-bottom: 40px; margin-right: 60px; }
+	/*.list .bg {width: 100%; height: 100%; background: url("../img/moonhover.jpg"); position: absolute;}*/
+	.list ul li .text {width: 100%; height: 100%; border:1px solid #000; opacity: 0.6; background-color: white;border:1px solid #9be6ff; display: none; text-align:center; line-height: 400px; font-size: 30px; border-radius: 5%; font-weight: bold}
+		.list ul li:hover .text {display: block}
+
+		/*3번째 li마다 margin 0 */
+		.list ul li:nth-child(3n) {margin-right:0;}
+		.list ul li:hover  {cursor: pointer}
+		/*list 이미지 넣기 */
+		.list ul li:first-child {background: url(../img/moonVillage1.jpg); background-position: 48% 100%; background-size: 650px}
+
+		.list ul li:nth-child(2) {background: url(../img/moonVillage2.jpg); background-position: 15% 7%;}
+		.list ul li:nth-child(3) {background: url(../img/moonVillage3.jpg); background-position: 28% 0%; background-size: 600px}
+		.list ul li:nth-child(4) {background: url(../img/moonVillage4.jpg); background-position: 24% 0%; background-size: 650px}
+		.list ul li:nth-child(5) {background: url(../img/moonVillage5.jpg); background-position: 8% 5%; background-size: 650px}
+		.list ul li:nth-child(6) {background: url(../img/moonVillage6.jpg); background-position: center; background-size: 400px}
+
+/*반으옇ㅇ*/
+@media screen and (max-width: 480px ){
+	.container {width: 100%;}
+	.infor {padding: 15px; margin-bottom: 20px;}
+		.infor p {width: 95%; font-size: 1.2em}
+	.infor {padding-left: 20px;}
+		.list >  ul {padding-left: 20px;}
+			.list > ul > li {width: 95%}
+
+
+}
+		

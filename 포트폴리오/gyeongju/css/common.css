@@ -1,0 +1,70 @@
+/*기본설정.*/
+
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+* {margin:0; padding:0; box-sizing: border-box; list-style: none}
+a{cursor:pointer; text-decoration: none; color:white; }
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+.hidden {display: none}
+body,html {width: 100%; height: 100%; font-size: 15px;}
+/*레이아웃의 w중심을 잡아준다. */
+.container {max-width: 1050px; width: 100%;margin: 0 auto; }
+/*추가정보,설명을 나타낼때 쓰임*/
+.hidden {display: none}
+/*페이지마다 서브 메뉴의 제목을 나타낼 때 쓰임 */
+.top h2 {padding: 50px 0; font-weight: normal; width: 100%;font-size: 40px;}
+ 
+
+/*햄버거메뉴*/
+.openMenu {background: #fff; opacity: 0.8;width: 55px; height: 55px; border-radius: 50%; padding: 9px; position: fixed; top:0; left:0; z-index: 9000; margin:10px 0 0 5px; cursor: pointer; display: none }
+      .openMenu img {width:100%; height: 100%;}
+.closeMenu {background: #fff; opacity: 0.8;width: 55px; height: 55px; border-radius: 50%; padding: 9px; position: fixed; top:0; left:0; z-index: 9000; margin:10px 0 0 5px; display: none; cursor: pointer; display: none}
+  .closeMenu img {width: 100%; height: 100%;   transform: rotate(360deg); animation: 3s}
+
+/*Header*/
+header {width:100%; height:10vh; position: fixed; z-index: 98;; display:block; background: #000; }
+  header .logo {width: 100px;line-height: 10vh; padding-left: 20px; float:left;}
+    header .logo a {font-family: 'Pangolin';}
+
+  header .main {width:40%; height: 10vh; line-height: 10vh; float: right}
+    header  .main {position: relative; height: 10vh;}
+      header nav >  .main >  li {float:left; width: calc(100%  / 5); text-align: center; height: 10vh; font-size: 1.1em;}
+        header nav  .main  > li:hover > a{font-size: 1.1em;}
+        header  > .main > a {display: block; color: white; line-height:10vh ;}
+          /*.main > li:hover {background: red;}*/
+          .sub { width: 100%; background: #000; margin-top: -30vh;}
+            .sub li:first-child {}
+            .sub li {height: 6vh; line-height: 6vh;}
+              .main > li:hover .sub {margin-top: -5px; }
+
+/*scroll*/
+    .up {position: fixed; background: #fff; color:black; box-shadow: 0px 4px 5px #9f9f9f; }
+     .up .Gyeongju_logo a {color:black;}
+     .up span {color:black;}
+    .up .sub {margin-top: 30px;}
+
+
+
+/*//header//*/
+/*content*/
+.content {width: 100%; }
+    .banner {width: 100%; height:50vh;}
+/*체험여행부분*/
+
+footer {width: 100%;height: 40px;font-size: 10pt; padding: 10px; border-top:1px solid #ccc; clear: both; background: white; text-align: center;}
+    footer ul {max-width: 100%; min-width:600px; }
+    footer ul li {float:left; list-style: none; width: calc(100% / 3); text-align: center;}
+
+/*반응형 css*/
+@media screen and (max-width: 480px ){
+  .openMenu {display: block}
+  .closeMenu {display: none}
+    header {height: 100vh;  width: 100%; padding-top: 100px; margin-left: -500px;}
+      header .logo {width: 100%;text-align: center; }
+      header .main {max-width: 480px; width: 100%; float:none;height: 40vh; margin-top: 10vh; }
+          header nav >  .main >  li {float:none; width: 100%; height: 8vh; line-height: 8vh;}
+            header nav .main li:last-child:hover .sub{display: block};
+              .sub {font-size: 0.6em;}
+            .sub {display: none}
+      footer {width:100%;}
+
+  }

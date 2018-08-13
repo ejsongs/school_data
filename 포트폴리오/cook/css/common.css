@@ -1,0 +1,65 @@
+	
+
+* {margin:0; padding: 0; box-sizing: border-box;word-break: break-all;}
+body , html {font-size: 15px;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+a { text-decoration: none;}
+li {list-style: none}
+.container { margin: 0 auto;  max-width: 1200px; margin-top: 0;}
+.content {width: 100%; height: auto;}
+.hidden {display: none;}
+section {width: 100%; }
+.wrap {}
+
+/*Header*/
+
+.openMenu {background: #fff; opacity: 0.8;width: 55px; height: 55px; border-radius: 50%; padding: 9px; position: fixed; top:0; left:0; z-index: 9000; margin:10px 0 0 5px; cursor: pointer; }
+      .openMenu img {width:100%; height: 100%;}
+.closeMenu {background: #fff; opacity: 0.8;width: 55px; height: 55px; border-radius: 50%; padding: 9px; position: fixed; top:0; left:0; z-index: 9000; margin:10px 0 0 5px; display: none; cursor: pointer;}
+  .closeMenu img {width: 100%; height: 100%;   transform: rotate(360deg); animation: 3s}
+
+header {min-width: 300px; min-height: 100vh; position: fixed; text-align: center; margin: 0 auto; z-index: 1000; background: rgba(255,255,255,0.8); margin-left: -500px;}
+	.menu {padding-top:80px;}
+		.menu .logo {width: 100%; padding-bottom: 30px;}
+			.logo > img {width: 100%}
+		.menu ul {width: 100%; height: 100%;}
+			.menu ul li {width: 100%; font-size: 1.5em; padding: 16px 25px; text-align: left}
+			  	.menu ul li:hover {background: #7de1ff;}
+			  		.menu ul li:hover a {color: #fff}
+				.menu ul li a {color:#333;}
+	.contact {width: 100%;min-height: 50px;position: absolute;bottom: 150px; padding: 0 15px; }
+		.mail {width: 100%;display: flex;  }
+			.mail:after {clear: both; content: ""; display: block}
+				.contact .mailIcon {flex:initial; width: 40px;  height: 40px; float:left; }
+					.mailIcon > img {width: 100%; height: 100%;}
+					.mailAdress { flex: 1; float:left; height: 35px; line-height: 35px; color: #a2a0a0; font-size: 1em;}
+					.sns {width: 100%; margin-top: 25px;}
+						.sns ul {width: 90%;display: flex; height: 30px;  }
+							.sns ul:after {clear: both; content: ""; display: block}
+								.sns ul li {float:left; flex: 1;height: 40px; margin-right: 8%; }
+									.sns ul li img {width: 100%; height: 100%; }
+										.kakao > img{ zoom:1.1; }
+
+				
+			/*스크롤 했을 때 */
+			.up {position: fixed; background: #fff !important;box-shadow: 4px 4px 4px rgba(39,39,39,0.4); }
+			}
+			
+
+/*Footer*/
+footer {background: black; }
+	footer .container {}
+		.copyright {color:#4a4a4a; text-align: center; font-weight:normal; padding: 15px 0; text-align: center; font-size: 13px;}
+
+
+/*https://www.lifeplus.co.kr/event/*/
+/*http://www.seogaandcook.com/Webzine/galleryView.asp?page=3&s_value=&idx=8*/
+/*https://www.beusable.net/*/
+
+/*반응형*/
+@media screen and (max-width: 480px ){
+		header {}
+			.main_menu {min-height: 85vh; min-width: 300px}
+				.sns > ul {width: 100%; }
+				 .sns li {width: calc(100% / 4) }
+	}

@@ -1,0 +1,139 @@
+<?php
+	include "header.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>먹거리</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/food.css">
+</head>
+<body>
+	<div class="wrap">
+		
+		<!-- 먹거리와 맛집 소개   -->
+		<div class="food">
+			<div class="container">
+				<h2>먹거리</h2>
+				<div class="food_top">
+					<h3>먹거리&맛집</h3>
+					<div class="selectBox">
+						<strong class="hidden">선택상자</strong>
+						<em class="hidden">선택내용</em>
+						<select name="foodCategori" id="foodCategori">
+							<option value="tea">차</option>
+							<option value="fodd">식사</option>
+							<option value="snack">간식</option>
+						</select>
+					</div>
+				</div>
+				<div class="foodList">
+						<ul>
+							<li class="foodImg" id="hwangnam">
+								<a href="http://www.hwangnam.co.kr/mall/index.php">
+									<img src="./img/hwangnam.jpg" alt="찰보리빵">
+									<span>
+										황남빵
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="bori">
+								<a href="#">
+									<img src="./img/bori.jpg" alt="보리빵">
+									<span>
+										보리빵
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="shilla">
+								<a href="#">
+									<img src="./img/shilla.jpg" alt="">
+									<span>
+										신라미소빵 
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="dice">
+								<a href="#">
+									<img src="./img/dice.jpg" alt="">
+									<span>
+										주령구빵
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="chumsungdae">
+								<a href="#">
+									<img src="./img/chumsungdaeChoco.jpg" alt="첨성대 초콜룃">
+									<span>
+										첨성대 초콜릿
+									</span>
+								</a>
+							</li>
+							<!-- 여기서부터는 맛집 -->
+							<li class="foodImg" id="tasty1">
+								<a href="#">
+									<img src="./img/tasty1.jpg" alt="찰보리빵">
+									<span>
+										홍시 한정식
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="tasty2">
+								<a href="#">
+									<img src="./img/tasty2.jpg" alt="찰보리빵">
+									<span>
+										별채반 교동쌈밥
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="tasty4">
+								<a href="#">
+									<img src="./img/tasty4.jpg" alt="찰보리빵">
+									<span>
+										도솔마을
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="chumsungdae">
+								<a href="#">
+									<img src="./img/tasty5.jpg" alt="찰보리빵">
+									<span>
+										수리뫼
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="chumsungdae">
+								<a href="#">
+									<img src="./img/tasty6.jpg" alt="찰보리빵">
+									<span>
+										라선재
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="tea1">
+								<a href="#">
+									<img src="./img/tea1.jpg" alt="찰보리빵">
+									<span>
+										고운님 오시는 길
+									</span>
+								</a>
+							</li>
+							<li class="foodImg" id="tea2">
+								<a href="#">
+									<img src="./img/tea2.jpg" alt="찰보리빵">
+									<span>
+										아리솔
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+		
+	</div>
+	<script src="./js/scroll.js"></script>
+</body>
+</html>

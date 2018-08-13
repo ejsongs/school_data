@@ -1,0 +1,56 @@
+a {text-decoration: none;}
+
+.food {width: 100%;  min-height: 130vh;  padding-top: 100px; background: #f9f9f9;}
+	.container { height: 100%;  }
+	.food .container h2 {display: none; position: relative;}
+		/*페이지 제목*/
+		.food_top { padding-top: 70px; height: 155px;  font-size: 30px; font-weight: normal; margin-bottom: 30px;   }
+			.food_top h3 { font-weight: normal;color:#333; float:left; display: block; padding-left: 15px;}
+			/*메뉴벌 음식 찾기 */
+			.selectBox {width: 250px; height: 50px; border:1px solid #ddd;background: #fff; float:right; overflow: hidden;}
+				.selectBox ul {width: 100%;}
+					.selectBox ul li {list-style: none; width: 100%; text-align: center; font-size: 20px; line-height: 50px; }
+					#foodCategori {width: 100%; height: 56px; border: none; padding-left: 100px;}
+		/*맛집 리스트*/
+		.foodList {}
+			.foodList:after {clear:both; content:""; display: block}
+			.foodList ul { width: 100%; min-width:90px; position: relative; margin: 6px auto  0px;  }
+		 /*맛집 공통 내용*/
+			.foodList li {list-style:none; width: calc(100% / 4 - 40px);  float:left; border-bottom:1px solid #dfdfdf; margin-right: 40px;  text-align: center; padding: 40px 0;  height: 220px; border-radius:220px; background-size: 230px; background: no-repeat center; margin-bottom: 60px; position: relative;}
+				.cover {width: 100%; height: 100%;position: absolute; top: 0; border-radius: 220px; }
+					.foodList li:hover .cover {background: rgba(0,0,0,0.8);}
+				.foodImg span {width: 100%; color:white; display: block; text-align: center; font-size: 22px;  font-weight: bold; position: absolute; top: 50%; left:50%; transform: translate(-50% , -50%); display: none}
+					.foodList li:hover span {display: block}
+						.foodList li {}
+			
+
+			/*img bg */
+			#hwangnam {background: url("../img/hwangnam.jpg") no-repeat;  }
+			#bori {background: url("../img/bori.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}		
+			#shilla {background: url(../img/shilla.jpg)no-repeat;  background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#dice {background: url("../img/dice.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#chumsungdae {background: url("../img/chumsungdaeChoco.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tasty1 {background: url("../img/tasty1.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tasty2 {background: url("../img/tasty2.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tasty4 {background: url("../img/tasty4.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tasty5 {background: url("../img/tasty5.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tasty6 {background: url("../img/tasty6.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tea1 {background: url("../img/tea1.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+			#tea2 {background: url("../img/tea2.jpg")no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover;}
+
+			
+	@media screen and (max-width: 480px ){
+	/*.container {min-width: 450px; }*/
+	.wrap {width: 100%; }
+		.food_top {width: 100%; height: 230px;  }
+		.food {padding-top: 50px;}
+			.food_top {width: 100%; height: 250px;}
+				.food_top h3 {width: 100%; text-align: center; float:none; padding-top: 0px; margin-bottom: 40px;}
+				.food_top .selectBox {margin-bottom: 30px;float:none; margin: 0 auto;}
+			.fooodList {width: 480px; min-height: 100vh; margin-top: 150px;}
+				.foodList ul {width: 100%; padding-left: 20px; }
+					.foodList ul li {width: 44%;  margin-right: 20px; height: 160px;}
+		footer {width: 100%;}
+
+	}
+	

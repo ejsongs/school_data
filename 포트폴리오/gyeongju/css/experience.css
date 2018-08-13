@@ -1,0 +1,70 @@
+.content {padding-top: 80px;}
+/*마을 소개제목*/
+	.main_title h3 {font-size: 35px; padding: 100px 0 40px; font-weight: normal; color:#1d1d1d;}
+		.main_title p {font-size: 15px; padding-bottom:40px; color:#696969;} 
+
+/*마을소개하는부분 곹오*/
+	section { display: block; position: relative; width: 100%; }
+	.box {width:100%; }
+	  .box:after {display: block; content:""; clear: both}
+		.town_title {display: block; float:left; padding-top: 30px; background: white;  }
+		 .tonw_title ul {width: 100%;  }
+			.title {  float:left; z-index: -2; padding-bottom:50px; width: 100%; padding-top: 15px; }
+				.title > h4 {font-size: 30px; font-weight: bold; padding-bottom: 10px;width: 100%}
+				.title > hr {width: 130px; border:1px solid #000}
+			.town_title li { width: 100%; float:left; margin-right:20px; padding-bottom: 50px; }
+			  .town_title li img {width: 100px; height: 100px; }
+				.town_title span {float: left; margin-right: 20px;}
+				.town_title h5 {font-size: 18px; margin-bottom: 10px; padding-top: 15px; }
+				.town_title .about {float:left; color:#989898;}
+					.about > a {color:#909090}
+					
+
+			.photo {float:left; position: absolute; height:100%; z-index: -2;	}
+				.photo img {width: 700px; height: 100%; display: block}
+		.plus {width:100%; height: 200px; background: #f3f3f3; }
+			.plus ul {display: flex}
+				.plus li {float:left;min-width: 290px; text-align: center; line-height: 200px; font-size: 50px; color:#006cc7; font-weight: bold; flex:1; flex-wrap: wrap;}
+/*type a*/
+			
+			.a	.photo { right:0; }
+			.a .town_title {width: 50%}
+			
+			
+/*type b*/
+
+		.b	.town_title {  float:right; padding: 10px 30px; width: 50%; }
+		.b	   .town_title li { width: 100%; float:left; margin-right:40px; }
+		.b	.photo {  margin-right: 20px; left:0; width: 40%}
+			
+
+
+/*마을에 대한 정보*/
+
+/*반응형*/
+@media screen and (max-width: 480px ){
+	* {word-break: break-all; }
+	.container {width: 100%; }
+		.main_title {margin-top: 10px;padding-left: 10px;}
+			.main_title li {width: 100%; }
+				.title > h4 {padding-bottom: 20px}
+				.main_title h3 {padding-top: 0; }
+		
+		.box {width: 100%; }
+		.a .town_title {width: 100%; }
+		.b .town_title {width: 100%; }
+			.town_title {padding: 10px 0 10px 10px; width:100%;  }
+				.title {padding-bottom: 20px; padding-top: 0}
+					.town_title li {padding-bottom: 20px}
+						.town_title span {margin-right: 10px}
+							.town_title span img {width: 50px; height: 50px; }
+							.town_title li h5 { font-size: 1.5em; height:50px; margin-bottom: 0; padding: 0; line-height: 40px; }
+						.about {width: 95%; min-height: 40px; line-height: 40px;  margin: 0 auto; font-size: 1.3em;}
+			.plus {display: block; flex:none; height: 100px; margin-bottom: 20px}
+			.plus ul {flex:none; padding-left: 10px}
+				.plus ul li {font-size: 1.5em;min-width: calc(100% / 3); flex:none; line-height: 100px; }
+		.photo {display: none}	
+	footer {width: 100%;}
+
+
+	

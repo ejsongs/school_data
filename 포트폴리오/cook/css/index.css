@@ -1,0 +1,120 @@
+/*반응형*/
+/*모바일*/
+	@media screen and (max-width: 480px ){
+
+
+				.aboutStore {}
+					 .explain {font-size:1.1em !important;padding: 0 20px; }
+					 .brandStory {min-height: 100vh;}
+					 	.brandStory ul {display: block !important;}
+					 		.brandStory li { min-width:350px; float:none !important;}
+					 .gallery {padding-bottom: 10px; min-height: 240vh}
+					 	.gallery li {min-width: calc(100% / 1); }
+					 .notice {}
+					 	.noticeList  {}
+			}
+	}
+
+
+	}
+/*태블릿*/
+	@media screen and (min-width: 640px) and (max-width: 768px ){
+
+	}
+/*데스크 탑*/
+	@media screen and (min-width: 769px){
+
+	}
+
+/*공통*/
+section {min-height: 100vh;}
+
+/*홍보영상*/
+.promotionCover {width: 100%; height: auto;  position: absolute; top:0; left:0; min-height: 100vh !important; max-height: 100vh; }
+	.promotionVideo {background:rgba(255,255,255,0.0); width: 100%; height: 100%; }
+		.cover video {position: fixed; top:0; left:0; min-width: 100%; width: auto;  z-index: -10; }
+/*홍보 문구*/
+.promotionText {width: 25%; min-height: 100vh;position: absolute; right:0; top:0; background: rgba(255,255,255,0.4); padding-top: 5%; padding-left: 3%;}
+	.promotionText > p {writing-mode: vertical-lr;  height: 80vh; font-size: 1.9em;  line-height: 2; }
+/*ABOUT*/
+	.aboutStore {background: #fff; padding: 100px 0; min-height: 85vh !important;}
+		.sectionTitle {width: 100%; text-align: center;  }
+			.sectionTitle h2 {font-size: 40px; font-weight: bold; padding-bottom: 10px; color: orange;} 
+				.sectionTitle hr {width: 55px; height: 4px; background: orange; margin: 0 auto; border: none;}
+				.sectionTitle .name {font-size: 25px; padding: 30px 0 20px 0;}
+				.sectionTitle .explain {color: #acacac;  font-size: 18px; margin-bottom: 30px;}
+/*브랜드 스토리*/
+	.brandStory {width: 100%; margin: 0 auto; margin-top: 50px;}
+		.brandStory ul { width: 100%; display: flex; 	}
+			.brandStory ul:after {clear: both; display: block; content: "";}
+			.brandStory ul li {flex: 1; float:left; text-align: center;  padding: 10px; margin-right: 10px;}
+				.brandStory ul li:hover {cursor: pointer}
+				.brandStory ul li:hover .box {border: 1px solid #e5e5e5;}
+			.box {padding: 20px 5px; }
+				/*.brandStory ul li:hover {border: 1px solid #989898;}*/
+				.image filter:grayscale(100%); 
+					.image img {width: 30%; height: 30%; margin: 0 auto; display: flex; justify-content: center; align-items: center; -webkit-filter: grayscale(100%); filter: grayscale(100%); margin-bottom: 20px;}
+						.icon {filter: grayscale(100%);}
+					.image h3 {text-align: center; padding: 10px;}
+				.text {width:100%;margin: 0 auto; }
+					.text p {font-size: 15px;  margin-top: 10px; padding: 0px 10px;text-align: center; color:#787777;}
+/*사진*/
+	.gallery {background: #fff;}
+		.galleryBox {height: 100%;}
+			.galleryBox ul {width: 100%; height: 100vh;}
+				.galleryBox ul li {width: calc(100% / 3); height: 50vh; float:left; position: relative;}
+					.galleryBox ul li:hover {cursor: pointer}
+					.imgCover {display:none; width: 100%; height: 100%; background: rgba(255,255,255,0.9); position: absolute; top:0;}
+					.galleryBox ul li:hover .imgCover {display: block}
+				/*매장별 사진 */
+						#store1 {background: url("../image/store1.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 85% 0 ;
+						background-size: cover;  }
+						#store2 {background: url("../image/store2.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: center ;
+						background-size: cover;  }
+						#store3 {background: url("../image/store3.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: center ;
+						background-size: cover;  }
+						#store4 {background: url("../image/store4.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: center ;
+						background-size: cover;  }
+						#store5 {background: url("../image/store5.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 0% 0%;
+						background-size: cover;  }
+						#store6 {background: url("../image/store6.jpg")no-repeat; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 72% 0  ;
+						background-size: cover;  }
+				.imgCover .box {width: 100%;  height: auto; position: absolute; top:50%; left:50%; transform: translate(-50% , -50% );}
+					.imgCover h4 {margin: 0 auto; font-size: 25pt; text-align: center; margin-bottom: 20px; font-weight: bold}
+						.imgCover .location {width: 100%; height: 20px; font-size: 1.2em; padding: 10px; color: #646464; text-align: center;}
+/*contact*/
+	.call {background: #fff; min-height: 80vh; padding: 100px 0;  }
+		.call:after {clear: both; content: ""; display: block}
+			.call .container {width: 100%; }
+				.snsWrap {width: 100%; }
+					.snsWrap ul {width: 100%; display: flex}
+					  .snsWrap ul:after {display: block; clear: both; content: ""}
+						.snsWrap ul li {flex:1; border: 1px solid #000; height: 100px; margin-right: 50px; float:left}
+				
+/*notice*/
+	.notice {width: 100%; background: #fff; padding: 100px 0;}
+		.sectionTitle {margin-bottom: 50px;}
+		.noticeList {width: 100%;height: 100%;}
+			.listTop {width: 100%}
+				.listTop ul {width: 100%; display: flex; background: #d6d4d4}
+					.listTop ul li {text-align: center; padding: 15px 0; border-right: 2px solid #f7f3f3;}
+					  .listTop ul li:last-child {border-right: none;}
+						.date {flex: 1;}
+						.title  {flex: 4; }
+						.hit {flex:initial; width: 120px;}
+			.listBottom {width: 100%;}
+				.listBottom ul {width: 100%; display: flex;}
+					.listBottom ul li {text-align: center; padding: 20px 0;  border-bottom: 1px solid #d4d4d4;}
+						.listBottm ul li:last-child {border-right: none;}
+							.listBottom  .title {cursor: pointer;}
+								.listBottom .title:hover {text-decoration: underline; }
+				
+
+
+						
+
+				
+		
+					
+
+

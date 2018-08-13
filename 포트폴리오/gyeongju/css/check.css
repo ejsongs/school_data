@@ -1,0 +1,11 @@
+.content {min-height: 89vh;}
+	.container {}
+		.questionBox {width: 100%; }
+			.top {}
+			.qeustionList {width: 100%;}
+				.questionList ul {width: 100%;  display: flex; margin-bottom: 50px;}
+					.questionList li {flex:1; margin-right: 80px; border:1px solid #000; height: 400px;}
+					  .questionList li:last-child {margin-right: 0;}
+					  	.title {width: 100%; background: skyblue; height: 70px; text-align: center; display: flex; line-height: 70px;}
+						 .questionList li h2 {flex: 2 ;float:left; }
+						 .questionList li span {display: block; flex:1;float:left; }

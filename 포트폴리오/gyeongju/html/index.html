@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gyeongju</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<link href="./css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/common.css">
+	
+	
+</head>
+<body>
+	<div class="wrap">
+	<!--Logo,Menu-->
+		<header >
+			<h1 class="Gyeongju_logo">
+				<a href="./index.html">Gyeongju</a>
+			</h1>
+			<div class="menu">
+			    <h2 id="none_logo">Gyeongju</h2>
+			    <ul class="menu_gnb"> 
+			        <li>
+			        	<a href="./introduce.html">
+			        		<span>경주</span>
+			        	</a>
+			        </li>
+			        <li>
+			        	<a href="./experience.html">
+			        		<span>농촌체험</span>
+			        	</a>
+			        </li>
+			         <li>
+			        	<a href="./moon.html">
+			        		<span>달동네</span>
+			        	</a>
+			        </li>
+			        
+			        <li>
+			        	<a href="./food.html">
+			        		<span>먹거리</span>
+			        	</a>
+			        </li>
+			        <li>
+			        	<a href="./board.php">
+			        		<span>자유게시판</span>
+			        		<ul class="sub">
+			        			<li><a href="./board.php">공지사항</a></li>
+                                <li><a href="./reference.php">추천</a></li>
+			        			<li><a href="./qna.php">QnA</a></li>
+			        		</ul>
+			        	</a>
+			        </li>
+			    </ul>
+			</div>
+		</header>
+		<!-- //head -->
+	<!-- content -->
+        <div class="slide_box">
+        	<div class="slide_view">
+        		<ul class="bxslider">
+        			<li id="slide1">
+        				<span class="out">동궁</span>
+        				
+        			</li>
+        			<li id="slide2">
+        				<span class="out"></span>
+        				
+        			</li>
+        			<li id="slide3">
+        				<span class="out">경주 한옥</span>
+        				
+        			</li>
+        			<li id="slide4">
+        				<span class="out"></span>
+        				
+        			</li>
+        			<li id="slide5">
+        				<span class="out"></span>
+        			
+        			</li>
+        			<li id="slide6">
+        				<span class="out"></span>
+        				
+        			</li>
+        			<li id="slide7">
+        				<span class="out"></span>
+        				
+        			</li>
+        			<li id="slide8">
+        				<span class="out"></span>
+        				
+        			</li>
+        			<li id="slide9">
+        				<span class="out"></span>
+        				
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="content">
+        	<ul>
+        		<li class="illust">
+        			<span>Symbol</span>
+					<!-- <img src="./img/symbolImg.png" alt="신라시대 이미지 "> -->
+        		</li>
+        		<li class="year">
+        			<span>경주로 불린지</span>
+        			<div class="callName">935</div>
+        		</li>
+        		<li class="vision">
+					<span>경주는 	</span>
+					<div >희망도시</div>
+        		</li>
+        	</ul>
+        </div>
+     <!--//content-->
+	     <footer>
+	     	<ul class="container">
+	     		<li>copyright &copy; Ejsong 2017</li>
+	     		<li>관광안내전화 : 1330</li>
+	     		<li>응급전화 : 1339</li>
+	     	</ul>
+	     </footer>
+	</div>
+	<script src="./js/scroll.js"></script>
+	<script>
+		$('.bxslider').bxSlider ({
+		  mode:'horizontal', //default : 'horizontal', options: 'horizontal', 'vertical', 'fade'
+		  speed:500, //default:500 이미지변환 속도
+		  auto: true, //default:false 자동 시작
+		  captions: true, // 이미지의 title 속성이 노출된다.
+		  autoControls: true, //default:false 정지,시작 콘트롤 노출, css 수정이 필요
+		});
+	</script>
+
+</body>
+
+</html> 

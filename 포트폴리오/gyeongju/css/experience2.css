@@ -1,0 +1,33 @@
+.town {padding: 50px 0; background: #f9f5f5}
+/*페이지의 핵심 제목*/
+	.main_title h3 {font-size: 35px; padding: 100px 0 0; font-weight: normal; color:#1d1d1d;}
+		.main_title p {font-size: 15px; padding: 20px 0; color:#696969;} 
+.townBox {width: 100%; padding-bottom: 50px;  border-bottom:2px solid #e2e2e2;}
+	.last {margin-bottom: 50px; border:none;}
+	.town_list {}
+		.town_list >  h4 {font-size: 25px; padding: 30px 10px 10px 0; }
+		.town_list p {color:#696969; font-size: 15px; padding: 0 0px 10px; }
+		/*이미지를 슬라이드로 */
+		.mainImg {position: relative; }
+			.mainImg ul {width:100%; }
+				.mainImg ul li{ overflow: hidden ; width: 1000px;}
+			.mainImg img {width: 100%;  }
+			
+
+
+
+			/*슬라이드 이미지 버튼*/
+			.mainImg button {position: absolute; width: 50px; height: 50px; border-radius: 100%; background: #fff; top:50%; opacity: 0.5;}
+				#left {left:10px;} #right {right:10px;}
+
+		.program {width: 100%;}
+			.program h4 {font-size: 15px;padding: 10px 0;}
+				.programList {width: 100%; /*min-height: 100px;*/ margin-left: 20px;  }
+				.programList li {list-style:disc; float:left;margin-right: 55px; color:#919191; }
+				.programList li:first-child {padding-left: 0}
+		.infor {width: 100%; }
+			.infor h4 {font-size: 15px; width: 100%; clear: both; padding: 10px 0;}
+			.infor ul {width: 100%;}
+				.infor ul li {float:left; padding: 2px 10px; color:#919191;}
+				.infor ul li:first-child {padding-left: 0;}
+			.infor a {color:#919191;}

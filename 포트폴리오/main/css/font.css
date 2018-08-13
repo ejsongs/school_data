@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Noto Sans Thin";
+	src: url("./font/NotoSansKR-Thin-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans Light";
+	src: url("./font/NotoSansKR-Light-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans DemiLight";
+	src: url("./font/NotoSansKR-DemiLight-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans Medium";
+	src: url("./font/NotoSansKR-Medium-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans Regular";
+	src: url("./font/NotoSansKR-Regular-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans Bold";
+	src: url("./font/NotoSansKR-Bold-Hestia.woff") format("woff");
+}
+@font-face {
+	font-family: "Noto Sans Black";
+	src: url("./font/NotoSansKR-Black-Hestia.woff") format("woff");
+}
