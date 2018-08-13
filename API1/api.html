@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="./css/api.css">
+	<meta charset="UTF-8">
+	<title>api</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/jquery-3.0.0.js"></script>
+	<script>
+		// var url="api.php";
+		// $.ajax({
+		// 	url:url,
+		// 	datatype:'xml',
+		// 	type:'get',
+		// 	success:function(response){
+		// 		console.log(response);
+		// 		var $show = $(response).find('code').text(); 
+		// 			//alert($show);
+
+		// 		$(".text").append("<"+$show+"지역에서 운영하는 병원<br>");
+		// 		var Num = $(response).find('code').text();
+		// 		$(".text").append("<병원이름 :: "+Num+"<br>");
+
+				
+				
+		// 	}
+		// }); 
+		$(document).ready(function(){
+			$("#check").click(function(){
+				$(".text").empty();
+				var url = 'api.php';
+				var pos = $("#area").val();
+				//alert(pos); 
+				console.log(pos); 
+
+				$.ajax({
+			url:url,
+			datatype:'xml',
+			type:'get',
+			data:$('form').serialize(),
+				success:function(response) {
+					$(response).find('item').each(function(){
+					var info1 = $(this).find('continent').text();
+					var info2 = $(this).find('enname').text(); 
+					var info3 = $(this).find('name').text(); 
+					//console.log(info3); 
+					var info4 = $(this).find('news').text(); 
+
+					if(info3 == pos) {
+						$(".text").append(info4);	
+					}
+					 
+
+				})
+					console.log(response); 
+			}
+			})
+		})
+		})
+
+
+		</script>
+
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			국가별 사건 사고 현황 
+		</header>
+		<div class="content">
+			<div class="loaction">
+				<form >
+					<input type="text" id="area" maxlength="10" name="country" placeholder="국가를 써 주세요">
+					
+				</form>
+				<input type="button" id="check" value="조회">
+			</div>
+			<div class="text">
+					
+			</div>
+		</div>
+	</div>
+</body>
+</html>
