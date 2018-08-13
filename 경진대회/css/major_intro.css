@@ -1,0 +1,22 @@
+.container{margin-top:5%; }
+.text_under{margin: 4.2% 0% 2% 0%; width: 90%; background-color: #67add5; fill:#67add5;}
+aside {float:left;width: 14%;   margin-right:2%; margin-top:9%;}
+	aside ul { }
+	aside ul li {margin-bottom: 30px;  text-align:left; font-size: 1.2em ;}
+		aside ul li:hover {cursor: pointer; color:#777777;}
+
+	.contents {width: 80%;float:right; min-height: 1200px; }
+		.menu {float: left; width: 8%; }
+			.container h1 {width: 100%; height: 50px; font-size: 2.6em; margin-bottom: 50px;  }
+			.container .image {width: 100%; height:500px; background: #8d5f2a; margin-top: 30px; margin-bottom: 30px;  }
+				.container .image img {width: 100%; height: 100%; }
+			.container h3 {margin-bottom: 10px; }
+		.container span {margin-right: 10px; }
+	.container ul {width:92%; margin:0 auto; margin-bottom: 20px;  }
+		.container ul li {padding:5px 0; color: #888888;}
+
+
+.major { }
+	.major > div { display: none; }
+		.major > div.game { display: block; }
+

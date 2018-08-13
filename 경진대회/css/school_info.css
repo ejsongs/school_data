@@ -1,0 +1,58 @@
+.h1_under{width: 20%; background-color: #e3e3e3; fill:#e3e3e3; margin: 1% 0%;}
+
+/*banner*/
+#banner{width: 100%; height: 380px; background-color:#67add5; margin-bottom: 30px;}
+	#banner h1{color:#fff; padding-top:140px; text-align: center;}
+		.banner_menu{margin: 0 auto; width: 180px;}
+				.banner_menu li{float: left; margin-top:40px; color: #fff;}
+				.banner_menu li:hover{text-decoration: underline;}
+				.banner_menu li:after{content: "/" ;margin: 0px 20px;}
+				.banner_menu li:last-child:after{content: none;}
+
+/*god_info*/
+#god_info{width: 100%; height: 580px; margin-top: 7%;}
+		.info_text{width: 70%; min-width:40%; min-height: 580px; float:left; font-size: 0.9em; word-break: break-all;}
+				.info_text p{width: 98%; margin-bottom: 30px;}
+				.info_text p:last-child{margin-bottom: 0px;}
+		.info_pro{width: 25%;float:right; padding-left: 10px ;}
+				.info_pro img{width: 65%; height: 230px; background-color: #fff; margin: 0 auto; margin-top:40px;}
+				.info_pro p{width:65%; float:left; text-align: center}
+
+/*school_image*/
+#school_image{width: 100%; height: 600px;}
+#school_img{width: 90%; height: 502px; margin: 0 auto}
+		#school_img li{width:calc(94% / 3) ; height: 100%; float:left; border:1px solid #000; margin-right: 3%}
+		#school_img li:last-child {margin: 0; }
+			#school_img li:first-child {background :url("../image/streat1.jpg") no-repeat; background-size: cover; }
+			#school_img li:nth-child(2) {background :url("../image/streat2.jpg") no-repeat; background-size: cover; }
+			#school_img li:last-child {background :url("../image/streat3.jpg") no-repeat; background-size: cover; }
+
+/*school_DABID*/
+#school_david{width: 100%; height: 85vh; margin: 0px 0 80px 0px;  }
+    #school_david .david {height:100%; width: 60%  ; margin:0 auto; }
+    	.david ul {height:38vh ; margin-bottom: 5%;  }
+    	.david ul li {float:left; width: 30%; height: 100%; margin-right: 3%;border-radius: 100% ;
+										text-align: center; font-size: 12em; padding: 2% 0; font-weight: bold; 
+    								}
+		.david h1 {font-size: 150pt;}
+	    	.d h1 {color:#9D26B5;  }
+	    		.d .text {color:#9D26B5;}
+	    	.a h1{color:#EB3A1F;  }
+	    		.a .text {color:#EB3A1F;}
+	    	.v h1{color:#1FC2EB;}
+	    		.v .text {color:#1FC2EB;}
+	    	.i h1{color:#FAF73C;}
+	    		.i .text {color:#FAF73C;}
+	    	.lastd h1 {color:#64D249; }
+	    		.lastd .text {color:#64D249;}
+    	
+    	.david ul li {position: relative; }
+    	.david ul li:hover h1 {opacity: 0; }
+    		.david ul li .text { font-size:40pt; position: absolute; bottom:80px;  right: -20px; opacity:0;   }
+    		.david ul li:hover .text {opacity: 1; transition: opacity .5s; }
+
+/*.DAVID {width: 100%; height: 100%; margin:0 auto; padding-left: 1.5%;}
+	.DAVID li{list-style:upper-roman; font-weight: 200; margin-bottom: 10px;border:1px solid #aaa; }
+	.DAVID li p:first-child{font-size: 1.1em;}
+	.DAVID li p:nth-child{2}{font-size: 0.9em; padding-bottom: 5px;}*/
+/*.DAVID li p:nth-child{2}:last-child{padding-bottom: none;}*/

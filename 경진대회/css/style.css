@@ -1,0 +1,62 @@
+* {margin: 0; padding: 0; box-sizing:border-box;}
+a {color: inherit; text-decoration: none;}
+html, body { width: 100%; height: 100%; font-family: "Malgun Gothic"; color: #444; }
+h1 {padding: 0;}
+li {list-style: none; }
+.clear:after, ul:after { content: ""; display: block; clear: both; }
+	/**/
+
+/* POPUP */
+.popup { width: 100%; height: 100%; position: fixed; z-index: 2; left: 0; top: 0; background: rgba(0,0,0,.5); display: none; }
+	.popup form {height: 50px;  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; }
+    .close {width:30px; height: 30px; border-radius: 100%; background: red; border:none; }   
+
+.wrap {width: 100%; height: 100%;}
+.container, .container_new { width: 100%; max-width: 1200px; height: 100%; margin: 0 auto; min-width: 630px;  }
+
+
+header {width: 100%; height: 80px; line-height: 80px; background: #000; color: #fff;}
+	header:after {clear: both; content: ""; display:block; }
+		.on{position: fixed;top: 0;  z-index: 1; box-shadow: 10px 1px 8px  #a8a8a8; }
+	header.on a {font-size: 0.9em; color: #fff; }
+		header .on a:hover {font-size: 1.8em; }
+	header .container:after { content: ""; clear: both; display: block; }
+	.logo  {float: left; margin-top: -10px; }
+		.logo img {height: 40px; vertical-align: middle; }
+
+	.top_menu { float: right; width: 512px; z-index: 2; }
+		.top_menu li {float: left;width: calc(100% /4); font-size: 15pt; position: relative; text-align: center;   }
+		.top_menu li:nth-child(3) {padding-right: 0;}
+		.top_menu li a:hover { }
+
+.top_menu .icon {padding-right:50px; }
+		.top_menu .icon img {height: 27px; margin-left: -55px; }
+		.icon img:hover {height: 30px; padding-top: -5px; }
+
+
+	/*서브메뉴*/
+.menu_major{ position: relative; }
+.menu_major:hover .menu_majorsub { top: 0; }
+.menu_majorsub { background-color: rgba(0,0,0,.7); position: absolute; top: -100%; transition: top .5s; }
+    .menu_majorsub li {width: 100%; }
+    .menu_majorsub li a { font-size: 10pt; display: block; }
+    /*.menu_majorsub li{width: 100%; height: 35px; padding: 3px;}*/
+    	.menu_majorsub li:hover a {font-size: 12pt; }
+    .sub_area { top: 100%; height: 246px; overflow: hidden; position: absolute; width: 100%; z-index: 123; }
+    
+
+/*푸타*/
+/*footer {width: 100%; height: 80px; clear: both; background-color: #000; }
+	footer .container {width: 75%; height: 100%;  margin: 0 auto; padding-top: 12px; }
+	footer .footer_logo { }
+		footer .footer_logo .img {height: 100%;  margin-top: 30px; float: left; }
+		footer h3 {float:left; font-size: 1em; font-weight: normal; color:#8a8a8a; margin-top: 20px; margin-left: 10px;   }
+	footer .copy {color:#8a8a8a; float: right; margin-top: 20px; }*/
+
+	footer {width: 100%;  background: black; height: 80px; clear:both; }
+		.footer_wrap {width: 100%; margin: 0 auto; min-width: 1200px; padding: 20px 0 ; }
+			.footer_logo img{height: 40px;margin-right:10px;margin-top: -5px;  }
+			.footer_wrap h3 {  width: 500px; margin-left: 0px; padding-top: 15px;  }
+			.footer_logo img, h3 {float:left; }
+
+		 .copy {float:right; }
